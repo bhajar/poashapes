@@ -9,13 +9,14 @@ public class Point3D extends Point2D {
     public Point3D() {
         this(0.0,0.0,0.0);
     }
-
-    public Point3D(double x, double y, double x1, double y1, double z) {
+    public Point3D(double x, double y, double z) {
         super(x, y);
-        this.x = x1;
-        this.y = y1;
+        this.x = x;
+        this.y = y;
         this.z = z;
     }
+
+
     public void translate(double dx,double dy,double dz){
         x +=dx;
         y +=dy;
